@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Questão 6</title>
+		<meta charset="UTF-8">
+	
+	</head>
+<body>
+
+	<script>
+		var litros = parseFloat(prompt(" Número de litros vendidos: "));
+		var tipo = (prompt("Tipo de combustível: A - álcool e G- gasolina"));
+		
+		var preco, desconto, a, g
+
+		if(tipo=="a" && litros<=20) {desconto=0.03; preco=1.90;
+			} else if (tipo=="a" && litros>20){desconto=0.05; preco=1.90;	
+			} else if (tipo=="g" && litros<=20){desconto=0.04; preco=2.50;
+			} else if (tipo=="g" && litros>20){desconto=0.06; preco=2.50;}
+		else {alert("Há informações erradas. Tentar novamente.")}
+	
+	alert("Preço pago pelo cliente: R$ "+(preco*litros-desconto*litros));
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Questão 9</title>
+		<meta charset="UTF-8">
+	
+	</head>
+<body>
+
+	<script>
+		var i=0
+		var j=0
+		var k=0
+		var l=0
+		var n = (prompt(" Número total de eleitores: "));
+		do {var c = (prompt("Digite o seu voto (1, 2 e 3): "));
+
+			if(c=='1') {
+				i++
+			}else if (c=='2'){
+				j++
+			}else if (c=='3'){
+				k++
+			}else{alert("Candidato não encontrado.")}
+		l=i+j+k;
+		}while (l!=n) 
+	alert("Número de votos no candidato 1: " + i)
+	alert("Número de votos no candidato 2: " + j)
+	alert("Número de votos no candidato 3: " + k)
+
+	</script>
+
+</body>
+</html>

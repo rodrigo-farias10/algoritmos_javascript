@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Questão 5</title>
+		<meta charset="UTF-8">
+	
+	</head>
+<body>
+
+	<script>
+		var salario = parseFloat(prompt("Salário do colaborador: "));
+		var reajuste 
+
+		if(salario<=280) {reajuste=0.2;
+			} else if (salario>280&&salario<=700){reajuste=0.15;	
+			} else if(salario>700&&salario<=1500){reajuste=0.10;	
+			} else if (salario>1500)
+				{reajuste=0.05;}
+		else {alert("Há informações erradas. Tentar novamente.")}
+
+
+	alert("Salário antes do reajuste: R$ "+salario);
+	alert("Percentual de aumento aplicado (%): "+ 100*reajuste);
+	alert("Valor do aumento: R$ "+ salario*reajuste);
+	alert("Novo salário: R$ "+ salario*(1+reajuste));
+
+	</script>
+
+</body>
+</html>

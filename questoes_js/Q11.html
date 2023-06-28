@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Questão 11</title>
+		<meta charset="UTF-8">
+	
+	</head>
+<body>
+
+	<script>
+		var i=0;
+		var k=0;
+		var tmax=-1000000;
+		var tmin=1000000;
+
+		do {var t = parseFloat(prompt("Temperatura: "));
+			var r = ((prompt("Deseja continuar (S ou N)?: "))).toLowerCase();
+			i++
+			k+=t
+			if(t>tmax){
+				tmax=t
+			}
+			if(t<tmin){
+				tmin=t
+			}
+		}while (r!='n') 
+	alert("Temperatura máxima: " + tmax)
+	alert("Temperatura mínima: " + tmin)
+	alert("Temperatura média:: " + (k/i))
+
+	</script>
+
+</body>
+</html>

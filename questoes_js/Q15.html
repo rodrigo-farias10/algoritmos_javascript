@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Questão 15</title>
+		<meta charset="UTF-8">
+	
+	</head>
+<body>
+
+	<script>
+	
+var nome = (String((prompt("Nome:"))))
+		if (nome.length>=3){
+			alert("Nome tem mais que três caracteres")
+		} else{
+			alert("Nome não tem mais que três caracteres")
+		}
+
+		var idade = parseFloat((prompt("Idade:")))
+
+		if (idade>=0 && idade<=150){
+			alert("Idade entre 0 e 150")
+		} else{
+			alert("Idade não está entre 0 e 150")
+		}
+
+		var salario = parseFloat((prompt("Salario:")))
+
+		if (salario>=0){
+			alert("Salário maior que zero")
+		} else{
+			alert("Salário menor que zero")
+		}
+
+		var sexo = ((prompt("Sexo (M ou F):"))).toLowerCase()
+
+		if (sexo=='m'){
+			alert("Sexo masculino")
+		} else if (sexo=='f'){
+			alert("Sexo Feminino")
+		} else {
+			alert("Sexo inválido")
+		}
+
+		var ec = ((prompt("Estado Civil (S, C, V ou D):"))).toLowerCase()
+
+		if (ec=='s'){
+			alert("Solteiro")
+		} else if (ec=='c'){
+			alert("Casado")
+		} else if(ec=='v'){
+			alert("Viúvo")
+		} else if (ec=='d'){
+			alert("Divorciado")
+		} else {
+			alert("Opção inválida")
+		}
+	
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

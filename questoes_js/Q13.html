@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Questão 13</title>
+		<meta charset="UTF-8">
+	
+	</head>
+<body>
+
+	<script>
+	
+		var i=0;
+		var tot=0;
+		var media
+		var n = parseFloat((prompt("Quantidade de pessoas: ")));
+		do {var idade = parseFloat(prompt("Qual a idade da pessoa? "));
+			tot+=idade
+			i++
+		}while (i!=n) 
+		media=tot/n;
+		alert("Média de idade da turma: " + media)
+		if (media>=0 && media<=25){
+			alert("Turma jovem")
+		} else if (media>=26 && media<=60){
+			alert("Turma adulta")
+		} else if (media>60){
+			alert("Turma idosa")
+		}	
+
+
+	</script>
+
+</body>
+</html>
